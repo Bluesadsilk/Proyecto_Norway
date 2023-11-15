@@ -1,0 +1,48 @@
+
+nav{
+    background-color: #BA0C2F;
+    padding: 1vw;
+    
+ 
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: center;
+    
+    
+}
+
+nav a{
+    font-size: 2vh;
+    text-decoration:none;
+    color: white;
+
+}
+
+body{
+    display: grid;
+    background-color: #BA0C2F;
+    background-size: cover;
+
+  }
+
+
+
+
+  footer {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas de altura automática */
+    text-align: center;
+    background-color: #BA0C2F;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 60vw; /* Ancho total del footer */
+    left: 20vw; /* Alinea el inicio del footer */
+    border: 1vh solid white;
+    font-family: 'viking';
+}

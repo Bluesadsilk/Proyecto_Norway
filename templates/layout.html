@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
+</head>
+<body>
+
+     <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('actividades') }}">Actividades</a></li>
+            <li><a href="{{ url_for('gastronomia') }}">Gastronomía</a></li>
+            <li><a href="{{ url_for('cultura') }}">Cultura</a></li>
+            <li><a href="{{ url_for('idioma') }}">Idioma</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la Página -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="contacto">
+            <p>Contacto: noruega@norway.nw</p>
+        </div>
+        
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

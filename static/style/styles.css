@@ -1,14 +1,33 @@
+@font-face {
+    font-family: 'Celtica';
+    src: url(/static/font/Celtica-Book.ttf);
+}
+
+@font-face {
+    font-family: 'Donuts';
+    src: url(/static/font/Chocolate\ Donuts.otf);
+}
+
+@font-face {
+    font-family: 'Main';
+    src: url(/static/font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Marco';
+    src: url(/static/font/Marcovaldo-Regular-trial.ttf);
+}
+
+
 
 nav{
-    background-color: #BA0C2F;
-    padding: 1vw;
+    background-color: white;
+    color: black;
     
  
 }
 nav ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(5, auto);
     text-align: center;
@@ -17,32 +36,73 @@ nav ul{
 }
 
 nav a{
-    font-size: 2vh;
+    font-size: 2.5vh;
     text-decoration:none;
-    color: white;
+    color: black;
 
 }
 
 body{
+    font-family: 'Main';
     display: grid;
-    background-color: #BA0C2F;
-    background-size: cover;
+    background-color: lightblue;
+    
 
   }
 
-
-
-
   footer {
+    font-family: 'Main';
+    font-size: 2vh;
     display: grid;
-    grid-template-rows: auto auto; /* Dos filas de altura automática */
+    grid-template-rows: auto auto;
     text-align: center;
-    background-color: #BA0C2F;
-    color: white;
-    position: fixed;
+    background-color: white;
+    color: black;
     bottom: 0;
-    width: 60vw; /* Ancho total del footer */
-    left: 20vw; /* Alinea el inicio del footer */
-    border: 1vh solid white;
-    font-family: 'viking';
+   
+}
+
+.Welcome{
+   font-family: 'Celtica';
+   font-size: 2vw;
+   text-align: center;
+   background-color: gray;
+   border: 1vh solid black;
+   margin-top: 5vh;
+   border-radius: 50%;
+   margin-right: 40vw;
+   margin-left: 40vw;
+   padding: 1vw;
+}
+
+.separadorIndex{
+
+    
+    font-family:'Main';
+    font-size: 3vh;
+    text-align: center;
+    background-color: white;
+    padding: 0.5vw;
+    margin-top: 5vw;
+    
+
+}
+
+.Menhir{
+
+    font-family: 'Celtica';
+    font-size: 2vw;
+    text-align: center;
+    background-color: gray;
+    border: 1vh solid black;
+    margin-top: 5vh;
+    border-radius: 50%;
+    margin-right: 40vw;
+    margin-left: 40vw;
+    padding: 4vw;
+
+}
+.Menhir p{
+    
+    font-family: 'Main';
 }

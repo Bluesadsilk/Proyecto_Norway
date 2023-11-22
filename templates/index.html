@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
-    <link rel="stylesheet" href="/static/style/animations.css">
+    <link rel="stylesheet" href="/static/style/styles.css">
 
     {% extends "layout.html" %}
 
     {% block title %}Título de la Página Específico{% endblock %}
     
     {% block content %}
+    
+    <div class="Welcome"><H3> Bienvenido a Noruega</H3></div>
+
  
+      <div class="separadorIndex"> <p>Descubre la belleza del país escandinavo</p> </div>
+
+    <div class="Menhir">
+        <h2>Explora Noruega</h2>
+    </div>
+
+    <div class="Menhir">
+        <p>Noruega, conocida por sus impresionantes paisajes, fiordos majestuosos y auroras boreales, te espera con experiencias únicas. </P>
+    </div>
+
+    <div class="Menhir">
+            <P>Explora la rica cultura, la historia fascinante y la hospitalidad del pueblo noruego.</p>
+    </div>
+    
+     <div class="Menhir">
+        <p>Planifica tu viaje y sumérgete en la belleza natural de este maravilloso país.</p>
+    </div>
        
     {% endblock %}
 </html>

@@ -23,86 +23,106 @@
 nav{
     background-color: white;
     color: black;
+    text-align: center;
     
  
 }
 nav ul{
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     text-align: center;
+    justify-content: center;
+    gap: 5vw;
     
     
 }
 
 nav a{
-    font-size: 2.5vh;
+    font-size: 0.75vw;
     text-decoration:none;
     color: black;
 
 }
 
 body{
+    color: #666;
     font-family: 'Main';
     display: grid;
-    background-color: lightblue;
     
 
   }
 
-  footer {
-    font-family: 'Main';
-    font-size: 2vh;
+
+.dockerCover{
+    color: white;
+    position: relative;
     display: grid;
-    grid-template-rows: auto auto;
-    text-align: center;
-    background-color: white;
-    color: black;
-    bottom: 0;
-   
+    grid-template-columns: 1 auto;
+    grid-template-rows: 2 auto;
 }
 
-.Welcome{
-   font-family: 'Celtica';
-   font-size: 2vw;
-   text-align: center;
-   background-color: gray;
-   border: 1vh solid black;
-   margin-top: 5vh;
-   border-radius: 50%;
-   margin-right: 40vw;
-   margin-left: 40vw;
-   padding: 1vw;
+.dockerCoverT1{
+    font-size:10vh;
+    position: absolute;
+    top: 40%;
+    left: 50vw;
+    transform: translate(-50%, -50%);
 }
 
-.separadorIndex{
-
+.dockerCoverT2{
+    font-size: 5vh;
+    position: absolute;
+    top: 55%;
+    left: 50vw;
+    transform: translate(-50%, -50%);
     
-    font-family:'Main';
-    font-size: 3vh;
-    text-align: center;
-    background-color: white;
-    padding: 0.5vw;
-    margin-top: 5vw;
-    
-
 }
 
-.Menhir{
+.indexCover{
+    width: 100vw;
+    height: 100%;
+}
 
-    font-family: 'Celtica';
-    font-size: 2vw;
-    text-align: center;
-    background-color: gray;
-    border: 1vh solid black;
-    margin-top: 5vh;
-    border-radius: 50%;
-    margin-right: 40vw;
+.textCover{
+    font-size: 1.5vh;
+    display: grid;
+    text-align: justify;
     margin-left: 40vw;
-    padding: 4vw;
+    margin-right: 40vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh ;
+}
 
+
+.imagesCover {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 5fr)); /* Ajusta el tamaño mínimo y máximo según sea necesario */
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
 }
-.Menhir p{
-    
-    font-family: 'Main';
+
+.imageCover1 .imageCover2 .imageCover3 .imageCover4{
+    position: relative;
+    text-align: center;
 }
+
+.imagesCover H1{
+    font-size: 2vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.imagesCover img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    object-fit: cover; /* Corta la imagen si es necesario para ajustarse al contenedor */
+}
+
+
+

@@ -11,26 +11,52 @@
     
     {% block content %}
     
-    <div class="Welcome"><H3> Bienvenido a Noruega</H3></div>
+  <div class="dockerCover"> 
 
- 
-      <div class="separadorIndex"> <p>Descubre la belleza del país escandinavo</p> </div>
+    <h1 class="dockerCoverT1">
+        Vive Noruega
+    </h1>
 
-    <div class="Menhir">
-        <h2>Explora Noruega</h2>
-    </div>
+    <h1 class="dockerCoverT2">
+        Proyecto Norway
+    </h1>
+    <video 
+    class="indexCover" autoplay loop src="/static/img/video (720p).mp4">
+</video>
+</div>
 
-    <div class="Menhir">
-        <p>Noruega, conocida por sus impresionantes paisajes, fiordos majestuosos y auroras boreales, te espera con experiencias únicas. </P>
-    </div>
+<div class="textCover">
+    <p>
+        Descubre la majestuosidad de Noruega con Proyecto Norway. Sumérgete en paisajes impresionantes, desde fiordos imponentes hasta auroras boreales mágicas. Ofrecemos experiencias únicas y personalizadas para explorar este tesoro nórdico. ¡Aventúrate con nosotros y crea recuerdos inolvidables en cada rincón noruego!
 
-    <div class="Menhir">
-            <P>Explora la rica cultura, la historia fascinante y la hospitalidad del pueblo noruego.</p>
-    </div>
+    </p>
+</div>
+
+<div class="imagesCover">
     
-     <div class="Menhir">
-        <p>Planifica tu viaje y sumérgete en la belleza natural de este maravilloso país.</p>
-    </div>
+    <div class="imageCover1">
+    <a href="{{ url_for('actividades') }}">
+        <img class="imagesCover1" src="/static/img/imagecover1.jpg" alt="imagecover1">
+    </a>
+
+    <h1>Actividades</h1>
+
+</div>
+    
+    <div class="imageCover2">
+    <a href="{{ url_for('cultura') }}">
+        <img class="imagesCover1" src="/static/img/imagecover2.jpg" alt="imagecover2">
+    </a>
+
+    <a href="{{ url_for('gastronomia') }}">
+        <img class="imagesCover1" src="/static/img/imagecover3.jpg" alt="imagecover3">
+    </a>
+
+   
+    <a href="{{ url_for('idioma') }}">
+        <img class="imagesCover1" src="/static/img/imagecover4.jpeg" alt="imagecover4">
+    </a>
+</div>
        
     {% endblock %}
-</html>
+</html>1

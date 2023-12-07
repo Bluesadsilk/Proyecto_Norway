@@ -85,13 +85,17 @@ body{
 }
 
 .textCover{
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     display: grid;
-    text-align: justify;
-    margin-left: 40vw;
-    margin-right: 40vw;
+    text-align: left;
+    margin-left: 30vw;
+    margin-right: 30vw;
     margin-top: 5vh;
-    margin-bottom: 5vh ;
+    line-height: 3.5vh;
+}
+
+.textCover p::first-letter{
+    font-size: 5vh;
 }
 
 
@@ -101,9 +105,10 @@ body{
     gap: 1vw;
     justify-content: center;
     align-items: center;
+    margin-top: 15vh;
 }
 
-.imageCover1 .imageCover2 .imageCover3 .imageCover4{
+.imageCover1 , .imageCover2 , .imageCover3 , .imageCover4{
     position: relative;
     text-align: center;
 }
@@ -121,8 +126,63 @@ body{
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    object-fit: cover; /* Corta la imagen si es necesario para ajustarse al contenedor */
+    object-fit: cover;
 }
 
 
 
+.sloganBannerDocker{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 1 auto;
+    text-align: center;
+    margin-top: 15vh;
+}
+.sloganBannerDocker img{
+    text-align: center;
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.sloganBannerDocker h3{
+    font-size: 1.5vw;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.ubication{
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.ubicationHomeFrame{
+    border: none;
+    width: 100vw;
+    height: 20vh;
+}
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}

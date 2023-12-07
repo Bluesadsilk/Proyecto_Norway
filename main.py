@@ -1,3 +1,7 @@
+"""
+Este archivo contiene una aplicación web basica en flask.
+"""
+
 from flask import Flask, render_template
 
 app = Flask(__name__)

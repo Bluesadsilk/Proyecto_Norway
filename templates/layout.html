@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/animations.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
 </head>
 <body>
 
      <nav>
         <ul>
-            <li> <img class="flag" src="/static/img/flag.png" alt="bandera"></li>
+            <li><img class="flag" src="/static/img/flag.png" alt="bandera"></li>
             <li><a href="{{ url_for('index') }}">Inicio</a></li>
             <li><a href="{{ url_for('actividades') }}">Actividades</a></li>
             <li><a href="{{ url_for('gastronomia') }}">Gastronomía</a></li>

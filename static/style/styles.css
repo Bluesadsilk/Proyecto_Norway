@@ -34,9 +34,8 @@ nav ul{
     text-align: center;
     justify-content: center;
     gap: 5vw;
-    
-    
 }
+
 
 nav a{
     font-size: 0.75vw;
@@ -49,13 +48,13 @@ body{
     color: #666;
     font-family: 'Main';
     display: grid;
-    
-
   }
+
 
   .flag{
     width: 1.5vw;
     object-fit: cover;
+    align-items: center;
   }
 
 
@@ -73,6 +72,20 @@ body{
     top: 40%;
     left: 50vw;
     transform: translate(-50%, -50%);
+
+    text-shadow: 1px 1px 0px #333,
+
+        2px 2px 0px #333,
+        3px 3px 0px #333,
+        4px 4px 0px #333,
+        5px 5px 0px #333,
+        6px 6px 0px #333,
+        7px 7px 0px #333,
+        8px 8px 0px #333,
+        9px 9px 0px #333,
+        11px 11px 10px #000;
+
+
 }
 
 .dockerCoverT2{
@@ -81,6 +94,20 @@ body{
     top: 55%;
     left: 50vw;
     transform: translate(-50%, -50%);
+
+    text-shadow: 1px 1px 0px #333,
+
+        0.2vh 0.2vh 0vh #333,
+        0.3vh 0.3vh 0vh #333,
+        0.4vh 0.4vh 0vh #333,
+        0.5vh 0.5vh 0vh #333,
+        0.6vh 0.6vh 0vh #333,
+        0.7vh 0.7vh 0vh #333,
+        0.8vh 0.8vh 0.8vh #333,
+        0.9vh 0.9vh 0.9vh #334,
+        1vh 1vh 1vh #000;
+
+
     
 }
 
@@ -126,6 +153,17 @@ body{
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    text-shadow: 1px 1px 0px #333,
+
+    0.2vh 0.2vh 0vh #333,
+    0.3vh 0.3vh 0vh #333,
+    0.4vh 0.4vh 0vh #333,
+    0.5vh 0.5vh 0vh #333,
+    0.6vh 0.6vh 0vh #333,
+    0.7vh 0.7vh 0vh #333,
+    0.8vh 0.8vh 0.8vh #333,
+    0.9vh 0.9vh 0.9vh #334,
+    1vh 1vh 1vh #000;
 }
 .imagesCover img {
     width: 20vw;
@@ -143,6 +181,17 @@ body{
     grid-template-rows: 1 auto;
     text-align: center;
     margin-top: 15vh;
+    text-shadow: 1px 1px 0px #333,
+
+    0.2vh 0.2vh 0vh #333,
+    0.3vh 0.3vh 0vh #333,
+    0.4vh 0.4vh 0vh #333,
+    0.5vh 0.5vh 0vh #333,
+    0.6vh 0.6vh 0vh #333,
+    0.7vh 0.7vh 0vh #333,
+    0.8vh 0.8vh 0.8vh #000,
+    0.9vh 0.9vh 0.9vh #fff,
+    1vh 1vh 1vh #000;
 }
 .sloganBannerDocker img{
     text-align: center;

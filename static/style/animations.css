@@ -88,84 +88,152 @@ nav a:hover {
 
 
 
-.container {
-    margin: 0 auto;
-    width: 50px;
-    height: 200px;
-    position: relative;
-    perspective: 1000px;
-  }
-  
-  .carousel {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-  }
-  
-  .item {
-    display: block;
-    position: absolute;
-    background: #000;
-    width: 250px;
-    height: 200px;
-    line-height: 200px;
-    font-size: 5em;
-    text-align: center;
-    color: #FFF;
-    opacity: 0.95;
-    border-radius: 10px;
-  }
-  
-  .ga {
-    transform: rotateY(0deg) translateZ(250px);
-    background-image: url('/static/img/carrusel/slide2.jpg');
-    background-size: cover;
-  }
-  .gb {
-    transform: rotateY(60deg) translateZ(250px);
-    background-image: url('/static/img/imagecover3.jpg');
-    background-size: cover;
-  }
-  .gc {
-    transform: rotateY(120deg) translateZ(250px);
-    background: url('/static/img/carrusel/slide4.jpeg');
-    background-size: cover;
-  }
-  .gd {
-    transform: rotateY(180deg) translateZ(250px);
-    background-image: url('/static/img/carrusel/slide5.jpg');
-  }
-  .ge {
-    transform: rotateY(240deg) translateZ(250px);
-    background-image: url('/static/img/carrusel/slide1.jpg');
-    background-size: cover;
-  } 
-  .gf {
-    transform: rotateY(300deg) translateZ(250px);
-    background-image: url('/static/img/carrusel/slide6.jpg');
-    background-size: cover;
-  }
-  
-  .next, .prev {
-    color: #444;
-    position: absolute;
-    top: 100px;
-    padding: 1em 2em;
-    cursor: pointer;
-    background: #CCC;
-    border-radius: 5px;
-    border-top: 1px solid #FFF;
-    box-shadow: 0 5px 0 #999;
-    transition: box-shadow 0.1s, top 0.1s;
-  }
-  .next:hover, .prev:hover { color: #000; }
-  .next:active, .prev:active {
-    top: 104px;
-    box-shadow: 0 1px 0 #999;
-  }
-  .next { right: 5em; }
-  .prev { left: 5em; }
 
+.carousel {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
+
+
+
+.form {
+    background-color: gray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 45vh;
+    padding: 20px;
+    width: 20vw;
+    margin: auto;
+    margin-top: 5vh;
+    text-align: center;
+  }
+  
+  .title {
+    color: black;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: gray;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: black;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: black;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 2vh;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: gray;
+  }
   

@@ -44,10 +44,32 @@ nav a{
 
 }
 
+
+nav a.active-page {
+    font-size: 1vw;
+
+}
+
 body{
     color: #666;
     font-family: 'Main';
     display: grid;
+  }
+
+  footer{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 1 auto;
+  }
+  
+  .contacto{
+    font-size: 1vw;
+    text-align: center;
+  }
+  .redes-sociales{
+    font-size: 0.8vw;
+    text-align: center;
   }
 
 
@@ -172,6 +194,10 @@ body{
     object-fit: cover;
 }
 
+.cabeceraImagen{
+    width: 100vw;
+}
+
 
 
 .sloganBannerDocker{
@@ -211,7 +237,7 @@ body{
 }
 
 .ubication{
-    margin-top: 15vh;
+    margin-top: 10vh;
     text-align: center;
     font-size: 2vh;
 }
@@ -221,6 +247,12 @@ body{
     width: 100vw;
     height: 20vh;
 }
+
+
+
+
+
+
 
 
 

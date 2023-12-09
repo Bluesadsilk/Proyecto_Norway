@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
 </head>
 <body>
-
-     <nav>
+    <nav>
         <ul>
             <li><img class="flag" src="/static/img/flag.png" alt="bandera"></li>
-            <li><a href="{{ url_for('index') }}">Inicio</a></li>
-            <li><a href="{{ url_for('actividades') }}">Actividades</a></li>
-            <li><a href="{{ url_for('gastronomia') }}">Gastronomía</a></li>
-            <li><a href="{{ url_for('cultura') }}">Cultura</a></li>
-            <li><a href="{{ url_for('idioma') }}">Idioma</a></li>
-            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            <li><a href="{{ url_for('index') }}" {% if current_page == 'index' %}class="active-page"{% endif %}>Inicio</a></li>
+            <li><a href="{{ url_for('actividades') }}" {% if current_page == 'actividades' %}class="active-page"{% endif %}>Actividades</a></li>
+            <li><a href="{{ url_for('gastronomia') }}" {% if current_page == 'gastronomia' %}class="active-page"{% endif %}>Gastronomía</a></li>
+            <li><a href="{{ url_for('cultura') }}" {% if current_page == 'cultura' %}class="active-page"{% endif %}>Cultura</a></li>
+            <li><a href="{{ url_for('idioma') }}" {% if current_page == 'idioma' %}class="active-page"{% endif %}>Idioma</a></li>
+            <li><a href="{{ url_for('contacto') }}" {% if current_page == 'contacto' %}class="active-page"{% endif %}>Contacto</a></li>
         </ul>
     </nav>
 
@@ -29,11 +28,11 @@
     <!-- Pie de Página -->
     <footer>
         <div class="contacto">
-            <p>Contacto: noruega@norway.nw</p>
+            <p>Email: contacto@proyectonorway.nw</p>
         </div>
         
         <div class="redes-sociales">
-            <a href="#" target="_blank">Facebook</a>
+            <a href="" target="_blank">Facebook</a>
             <a href="#" target="_blank">Twitter</a>
             <a href="#" target="_blank">Instagram</a>
         </div>

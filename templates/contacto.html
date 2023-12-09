@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/animations.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
+    <title>Contacto</title>
+</head>
+<body>
+    {% extends "layout.html" %}
+
+{% block title %}Noruega{% endblock %}
+
+{% block content %}
+<div class="form">
+    <div class="title">Bienvenido</div>
+    <div class="subtitle">Introduzca sus datos y le contactaremos</div>
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" placeholder=" " />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder">Nombre</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="lastname" class="input" type="text" placeholder=" " />
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">Apellido</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder=" " />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Email</>
+    </div>
+    <div class="input-container ic2">
+        <input id="email" class="input" type="text" placeholder=" " />
+        <div class="cut cut-short"></div>
+        <label for="email" class="placeholder">Asunto</>
+      </div>
+    <div class="input-container ic2">
+        <input id="email" class="input" type="text" placeholder=" " />
+        <div class="cut cut-short"></div>
+        <label for="email" class="placeholder">Descripción</>
+      </div>
+    <button type="text" class="submit">Enviar</button>
+  </div>
+
+<div class="ubication">
+    <h3>¿Donde encontrarnos?</h3>
+    <iframe class="ubicationHomeFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1784.0581379643681!2d10.44456517861645!3d63.438847976858575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31012d095189%3A0xc18f9cc5609003e7!2sThrond%20Nergaards%20veg%2C%207044%20Trondheim%2C%20Noruega!5e0!3m2!1ses!2ses!4v1701957989380!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+{% endblock %}
+
+</body>
+</html>

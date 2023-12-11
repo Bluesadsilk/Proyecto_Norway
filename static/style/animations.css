@@ -118,27 +118,28 @@ nav a:hover {
 
 
 .form {
-    background-color: gray;
+    background-color: red;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 45vh;
-    padding: 20px;
+    height: 80vh;
+    padding: 2vh;
     width: 20vw;
     margin: auto;
     margin-top: 5vh;
     text-align: center;
+    margin-bottom: 2vh;
   }
   
   .title {
-    color: black;
+    color: white;
     font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 1.5vh;
   }
   
   .subtitle {
-    color: black;
+    color: white;
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -164,7 +165,7 @@ nav a:hover {
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: black;
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -173,7 +174,7 @@ nav a:hover {
   }
   
   .cut {
-    background-color: gray;
+    background-color: red;
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -211,11 +212,11 @@ nav a:hover {
   }
   
   .input:not(:placeholder-shown) ~ .placeholder {
-    color: #808097;
+    color: white;
   }
   
   .input:focus ~ .placeholder {
-    color: #dc2f55;
+    color: white;
   }
   
   .submit {
@@ -227,13 +228,65 @@ nav a:hover {
     cursor: pointer;
     font-size: 18px;
     height: 50px;
-    margin-top: 2vh;
+    margin-top: 3vh;
     outline: 0;
     text-align: center;
     width: 100%;
   }
   
   .submit:active {
-    background-color: gray;
+    background-color: white;
+    color: black;
   }
+  
+
+  @keyframes moviendrew {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+  
+  .flecha {
+    color: black;
+    animation-name: moviendrew;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;	
+    font-size: 20vw;
+    text-align: center;
+    margin: auto;
+  }
+
+  @keyframes movieInter {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  
+  .interrogation {
+    color: black;
+    animation-name: movieInter;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;	
+    font-size: 20vw;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  
+
+
+
+
+  
+  
+
   

@@ -57,6 +57,7 @@ body{
   }
 
   footer{
+    background-color: white;
     margin-top: 5vh;
     display: grid;
     grid-template-columns: 1 auto;
@@ -249,6 +250,13 @@ body{
 }
 
 
+.formContainer{
+
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-rows: 100vh;
+    text-align: center;
+}
 
 
 

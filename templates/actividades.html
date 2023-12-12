@@ -14,6 +14,7 @@
 
 {% block content %}
 
+<!-- Portada -->
 <div class="dockerCover">
     <h2 class="dockerCoverT1">Actividades</h2>
     <img class="cabeceraImagen" src="/static/img/coverActividades.jpg" alt="Cabecera Gastronomia">
@@ -21,6 +22,94 @@
 
 
 
+<!-- Carrousel -->
+  <div class="slider">
+    <input type="radio" name="toggle" id="btn-1" checked>
+    <input type="radio" name="toggle" id="btn-2">
+    <input type="radio" name="toggle" id="btn-3">
+  
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+  
+    <ul class="slides">
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">Montañismo</h2>
+          <p class="slide-text">Una experiencia incomparable para los amantes de la naturaleza y la aventura. Con su impresionante paisaje de montañas majestuosas, fiordos profundos y glaciares serpenteantes, </p>
+          <a href="#" class="slide-link">Saber más</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/Actividades/pexels-julie-aagaard-1374126.jpg" alt="stuff" width="320" height="240">
+        </p>
+      </li>
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">Esquí</h2>
+          <p class="slide-text">Desde las pistas perfectamente cuidadas hasta las rutas de esquí de fondo que serpentean a través de bosques cubiertos de nieve</p>
+          <a href="#" class="slide-link">Saber más</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/Actividades/pexels-julie-aagaard-2097110.jpg" alt="stuff" width="320" height="240">
+        </p>
+      </li>
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">Espeleología</h2>
+          <p class="slide-text">Descubre formaciones rocosas impresionantes y ríos subterráneos en un emocionante viaje espeleológico guiado por expertos locales. Sumérgete en las maravillas subterráneas de Noruega para una experiencia inolvidable.</p>
+          <a href="#" class="slide-link">Saber más</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/Actividades/pexels-tobias-bjørkli-1938352.jpg" alt="stuff" width="320" height="240">
+        </p>
+      </li>
+    </ul>
+  </div>
+
+
+    <!-- Slogan -->
+
+<div class="sloganBannerDocker">
+    <img src="/static/img/carrusel/slide3.jpg" alt="cosas">
+    <h3>"Noruega, donde la naturaleza se convierte en tu parque de aventuras." </h3>
+</div>
+
+<div class="containerActividades">
+    <h3>Top 3 Experiencias</h3>
+    <div class="experienciaL">
+        <div>
+            <h3>Trolltunga</h3>
+            <p>Embárcate en una épica travesía por la majestuosa Ruta de Trolltunga, una joya natural suspendida en los fiordos noruegos. Esta aventura te lleva a través de senderos desafiantes, revelando paisajes de ensueño y culminando en el icónico saliente rocoso con vistas panorámicas que te dejarán sin aliento. </p>
+    </div>
+        <img src="/static/img/trolltunga.jpeg" alt="cosas">
+    </div>
+    
+    <div class="experienciaR">
+        <img src="/static/img/fiordos.jpg" alt="cosas">
+
+        <div>
+            <h3>Crucero por los fiordos</h3>
+            <p>Sumérgete en la esencia indomable de Noruega con nuestros inolvidables cruceros por los majestuosos fiordos. Navega entre acantilados vertiginosos y aguas serenas mientras exploras la intrincada red de fiordos que adornan la costa noruega. Desde la grandiosa Geirangerfjord hasta el impresionante Sognefjord</p>
+        </div>
+    </div>
+    <div class="experienciaL">
+        <div>
+        <h3>Ver la Aurora Boreal</h3>
+        <p> En las noches claras y estrelladas, alejados de las luces urbanas, te invitamos a sumergirte en la serenidad del Ártico y presenciar la danza hipnotizante de las luces del norte. Desde lugares estratégicos como Tromsø hasta las remotas regiones del Círculo Polar Ártico, cada rincón ofrece la posibilidad de ser testigo de este fenómeno natural único. </p>
+    </div>
+        <img src="/static/img/aurora.jpg" alt="cosas">
+    </div>
+
+</div>
+
+<div class="containerReservas">
+
+    <h3>¡Exclusivo! <br>Reserva tu crucero por los fiordos de noruega</h3>
+
+    <iframe src="https://bookings.viajeselcorteingles.es/cruceros/crucero/norte-de-europa-y-fiordos/desde-kiel-alemania/costa-diadema/fiordos-noruegos-607084/" frameborder="0"></iframe>
+</div>
 
 
 {% endblock %}

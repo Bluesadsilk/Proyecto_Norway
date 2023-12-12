@@ -259,8 +259,66 @@ body{
 }
 
 
+.containerActividades{
+    display: grid;
+    grid-template-columns: 100vw;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 5vh;
+}
+
+.experienciaL{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    text-align: justify;
+    margin-left:5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    gap: 5vw;
+}
+
+.experienciaL img{
+    margin-top: 10vh;
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.experienciaR{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    text-align: justify;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    gap: 5vw;
+}
+.experienciaR p{
+    margin-right: 10vw;
+}
+.experienciaR img{
+    margin-top: 10vh;
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    margin-left: 10vw;
+    border-radius: 10%;
+}
 
 
 
 
 
+
+.containerReservas{
+    margin-top: 10vh;
+    font-size: 2vw;
+    display: grid;
+    text-align: center;
+}
+.containerReservas iframe{
+    margin-top: 5vh;
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    text-align: center;
+}

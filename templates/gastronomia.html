@@ -19,12 +19,55 @@
   <img class="cabeceraImagen" src="/static/img/covergastronomia.jpg" alt="Cabecera Gastronomia">
 </div>
 
-<div class="carousel">
-  <img src="/static/img/carrusel/gastro1.png" alt="Imagen 1">
-  <img src="/static/img/carrusel/gastro2.jpg" alt="Imagen 2">
-  <img src="/static/img/carrusel/gastro3.jpg" alt="Imagen 3">
-  <!-- Agrega más imágenes según sea necesario -->
-</div>
+<div class="slider">
+    <input type="radio" name="toggle" id="btn-1" checked>
+    <input type="radio" name="toggle" id="btn-2">
+    <input type="radio" name="toggle" id="btn-3">
+  
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+  
+    <ul class="slides">
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">Rakfisk</h2>
+          <p class="slide-text">Se trata de pescado fermentado, generalmente trucha o salmón, que se deja curar durante varios meses. Aunque su aroma fuerte puede resultar desafiante para algunos, es un plato tradicional consumido con pan, papas y crema agria.</p>
+          <a href="#" class="slide-link">Saber más</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/Gastronomia/gastro7.jpg" alt="stuff" width="320" height="240">
+        </p>
+      </li>
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">Lutefisk</h2>
+          <p class="slide-text">Este plato consiste en bacalao seco que ha sido tratado con una solución de lejía (lutefisk) para rehidratarlo. El resultado es un plato gelatinoso y delicado que se sirve con salsas, guarniciones y patatas.</p>
+          <a href="#" class="slide-link">Saber más</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/Gastronomia/gastro5.jpg" alt="stuff" width="320" height="240">
+        </p>
+      </li>
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">Koldtbord</h2>
+          <p class="slide-text">Aunque no es un plato en sí mismo, el "koldtbord" merece ser mencionado. Es una especie de banquete noruego estilo buffet que presenta una variedad de platos fríos, como pescado ahumado, carne en conserva, quesos, ensaladas y panes. </p>
+          <a href="#" class="slide-link">Saber más</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/Gastronomia/gastro3.jpg" alt="stuff" width="320" height="240">
+        </p>
+      </li>
+    </ul>
+  </div>
+
+
+  <div>
+    <iframe src="https://www.tripadvisor.es/Restaurants-g190455-Norway.html" frameborder="0"></iframe>
+  </div>
 {% endblock %}
 
 </body>

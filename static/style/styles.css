@@ -140,13 +140,13 @@ body{
 }
 
 .textCover{
-    font-size: 1.8vh;
+    font-size: 1.8vw;
     display: grid;
     text-align: left;
     margin-left: 30vw;
     margin-right: 30vw;
     margin-top: 5vh;
-    line-height: 3.5vh;
+    line-height: 7vh;
 }
 
 .textCover p::first-letter{
@@ -340,4 +340,11 @@ body{
 .folclore img{
     border-radius: 10%;
     width: 30vw;
+}
+
+.containerIdioma iframe{
+
+    width: 60vw;
+    height: 35vw;
+
 }

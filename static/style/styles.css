@@ -264,7 +264,12 @@ body{
     grid-template-columns: 100vw;
     text-align: center;
     font-size: 2vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
+}
+
+.containerActividades h3{
+   color: dark-gray;
+
 }
 
 .experienciaL{
@@ -321,4 +326,18 @@ body{
     height: 90vh;
     display: grid;
     text-align: center;
+}
+
+.folclore{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    text-align: left;
+    font-size: 2vw;
+    gap: 1vw;
+    margin-left: 10vw;
+    margin-right: 20vw;
+}
+.folclore img{
+    border-radius: 10%;
+    width: 30vw;
 }

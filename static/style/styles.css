@@ -140,7 +140,7 @@ body{
 }
 
 .textCover{
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     display: grid;
     text-align: left;
     margin-left: 30vw;
@@ -347,4 +347,9 @@ body{
     width: 60vw;
     height: 35vw;
 
+}
+
+footer form{
+    text-align: center;
+    font-family: 'main';
 }

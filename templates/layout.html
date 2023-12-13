@@ -27,14 +27,22 @@
 
     <!-- Pie de Página -->
     <footer>
+        <form id="filterForm">
+            <label for="searchInput">Buscar:</label>
+            <input type="text" id="searchInput" oninput="filterResults()" />
+    
+            <!-- Otros campos de filtro según tus necesidades -->
+    
+            <button type="reset" onclick="resetFilters()">Limpiar</button>
+        </form>
         <div class="contacto">
             <p>Email: contacto@proyectonorway.nw</p>
         </div>
         
         <div class="redes-sociales">
-            <a href="" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank">Facebook</a>
+            <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         </div>
     </footer>
     
